@@ -39,7 +39,11 @@ Kann man neue Passwort speichern,wenn man Password-Button klicken. In der Passwo
 ### SettingView(ich habe gemacht)
 ![](https://i.imgur.com/FDeRgeG.png)
 In SettingView kann man die MasterPasswort veraendern.
+
 ![](https://i.imgur.com/3wFA8yO.png)
 ![](https://i.imgur.com/s3e5YnK.png)
-In unsere Software gibt es 6 
+In unsere Software gibt es 6 verschiedene Sprache, English, German, French, Bulgarian, Chinese, Arabic.
+
+![](https://i.imgur.com/439Lepu.png)
+In SettingView kann man auch die Farbe von Fensters veraendern.
 
