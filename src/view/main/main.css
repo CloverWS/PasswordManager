@@ -1,0 +1,48 @@
+.selected {
+    -fx-background-color: #dcdcdc;
+}
+
+.unselect {
+    -fx-background-color: #bbbbbb;
+}
+
+.uniform-label{
+	-fx-font-size: 15px;
+	-fx-font-family: sans-serif;
+}
+
+.element:hover{
+	-fx-background-color: #9E9E9E;
+ 	-fx-cursor: hand;
+ 	
+}
+
+.containerVBox{
+	-fx-background-color: #607D8B;
+	-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+}
+.element{
+	-fx-background-color: #607D8B;
+}
+
+.button {
+	-fx-font-family: "Arial";
+	-fx-font-size: 13px;
+	-fx-font-weight: bold;
+	-fx-background-color: linear-gradient( #607D8B, #9E9E9E);
+	-fx-text-fill: #383640;
+	-fx-border-radius: 10px;
+}
+
+.button:hover {
+	-fx-background-color: linear-gradient( #607D8B, #9E9E9E);
+	-fx-text-fill: #ffffff
+}
+
+.combobox{
+	-fx-border-radius: 5px;
+}
+
+.white-text{
+	-fx-text-fill: white;
+}

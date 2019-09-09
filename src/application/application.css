@@ -1,0 +1,16 @@
+/* JavaFX CSS - Leave this comment until you have at least created one rule which uses -fx-Property */
+
+.text-area *.text {
+    -fx-text-alignment: center;
+}
+
+
+.root {
+	-fx-font-family: sans-serif;
+	-fx-font-size: 12px;
+}
+
+.uniform-label{
+	-fx-font-size: 50px;
+	-fx-font-family: sans-serif;
+}

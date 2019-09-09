@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<ruleset name="Sopra"
+	xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 http://pmd.sourceforge.net/ruleset_2_0_0.xsd">
+	<description>
+		Diese Regelmenge wurde zur Nutzung in der Lehrveranstaltung "Sopra" der TU Dortmund erstellt.
+		Sie besteht ausschließlich aus Standardregeln.
+	</description>
+<!-- Namensgebung-->
+	<rule ref="rulesets/java/naming.xml/ShortVariable"/>
+	<rule ref="rulesets/java/naming.xml/ShortMethodName"/>
+	<rule ref="rulesets/java/naming.xml/ShortClassName">
+		 <properties>
+        	<property name="minimum" value="3" />
+    	</properties>
+	</rule>
+	<rule ref="rulesets/java/naming.xml/VariableNamingConventions"/>
+	<rule ref="rulesets/java/naming.xml/MethodNamingConventions"/>
+	<rule ref="rulesets/java/naming.xml/ClassNamingConventions"/>
+	<rule ref="rulesets/java/naming.xml/PackageCase"/>
+	<rule ref="rulesets/java/naming.xml/AvoidDollarSigns"/>
+	<rule ref="rulesets/java/naming.xml/SuspiciousConstantFieldName"/>
+	<rule ref="rulesets/java/controversial.xml/AvoidLiteralsInIfCondition"/>
+<!-- Methoden-->
+	<rule ref="rulesets/java/codesize.xml/CyclomaticComplexity"/>
+	<rule ref="rulesets/java/codesize.xml/ExcessiveMethodLength">
+		<properties>
+			<property name="minimum" value="40"/>
+		</properties>
+	</rule>
+	<rule ref="rulesets/java/design.xml/AvoidDeeplyNestedIfStmts"/>
+	<rule ref="rulesets/java/codesize.xml/ExcessiveParameterList">
+		<properties>
+			<property name="minimum" value="5"/>
+		</properties>
+	</rule>
+<!-- Klassen-->
+	<rule ref="rulesets/java/design.xml/FieldDeclarationsShouldBeAtStartOfClass"/>
+	<rule ref="rulesets/java/codesize.xml/ExcessiveClassLength">
+		<properties>
+			<property name="minimum" value="400"/>
+		</properties>
+	</rule>
+	<rule ref="rulesets/java/design.xml/GodClass"/>
+<!-- Unused Code-->
+	<rule ref="rulesets/java/unusedcode.xml/UnusedPrivateField"/>
+	<rule ref="rulesets/java/unusedcode.xml/UnusedLocalVariable"/>
+	<rule ref="rulesets/java/unusedcode.xml/UnusedPrivateMethod"/>
+	<rule ref="rulesets/java/unusedcode.xml/UnusedFormalParameter"/>
+</ruleset>

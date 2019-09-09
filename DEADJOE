@@ -1,0 +1,30 @@
+
+*** These modified files were found in JOE when it aborted on Wed Aug 21 11:38:31 2019
+*** JOE was aborted by UNIX signal 1
+
+*** Datei '(Unbenannt)'
+/sopra/sopgr03/sopr030/git/projekt1/.git/MERGE_MSG
+
+*** Datei '/sopra/sopgr03/sopr030/git/projekt1/.git/MERGE_MSG'
+Merge branch 'master' of https://sopra-gitlab.cs.tu-dortmund.de/sopra19B/gruppe03/projekt1
+
+# Bitte geben Sie eine Commit-Beschreibung ein, um zu erklären, warum dieser
+# Merge erforderlich ist, insbesondere wenn es einen aktualisierten
+# Upstream-Branch mit einem Thema-Branch zusammenführt.
+#
+# Zeilen beginnend mit '#' werden ignoriert, und eine leere Beschreibung
+# bricht den Commit ab.
+
+*** Datei '* Startup Log *'
+Bearbeite '/etc/joe/editorrc'...Bearbeite '/etc/joe/ftyperc'...Finished processing /etc/joe/ftyperc
+Finished processing /etc/joe/editorrc
+
+*** These modified files were found in JOE when it aborted on Wed Aug 21 11:39:23 2019
+*** JOE was aborted because the terminal closed
+
+*** Datei '(Unbenannt)'
+/sopra/sopgr03/sopr030/git/projekt1/.git/MERGE_MSG
+
+*** Datei '* Startup Log *'
+Bearbeite '/etc/joe/editorrc'...Bearbeite '/etc/joe/ftyperc'...Finished processing /etc/joe/ftyperc
+Finished processing /etc/joe/editorrc

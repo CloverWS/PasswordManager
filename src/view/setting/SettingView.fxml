@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<fx:root maxHeight="500" maxWidth="-Infinity" minHeight="335" minWidth="-Infinity" prefHeight="335.0" prefWidth="601.0" stylesheets="@setting.css" type="AnchorPane" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TabPane layoutX="48.0" layoutY="30.0" prefHeight="380.0" prefWidth="601.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="-38.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+          <Tab fx:id="general" text="General">
+            <content>
+              <AnchorPane maxHeight="500.0" minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <SplitPane dividerPositions="0.8" layoutX="160.0" layoutY="126.0" maxHeight="500.0" orientation="VERTICAL" prefHeight="800.0" prefWidth="500.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <items>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                 <children>
+                                    <SplitPane fx:id="pane_1" dividerPositions="0.17" layoutX="131.0" layoutY="17.0" orientation="VERTICAL" prefHeight="127.0" prefWidth="598.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                      <items>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                             <children>
+                                                <Label fx:id="masterPwdChangeLabel" prefHeight="23.0" prefWidth="596.0" text="Master Passwort ändern" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                             </children>
+                                          </AnchorPane>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="175.0" prefWidth="597.0">
+                                             <children>
+                                                <GridPane maxHeight="200.0" maxWidth="496.0" prefHeight="134.0" prefWidth="496.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="81.0" AnchorPane.topAnchor="10.0">
+                                                   <columnConstraints>
+                                                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="276.0" minWidth="10.0" prefWidth="181.0" />
+                                                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="385.0" minWidth="10.0" prefWidth="385.0" />
+                                                   </columnConstraints>
+                                                   <rowConstraints>
+                                                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                   </rowConstraints>
+                                                   <children>
+                                                      <Label fx:id="oldPass" text="Altes Passwort" />
+                                                      <Label fx:id="newPass" text="Neues Passwort" GridPane.rowIndex="1" />
+                                                      <Label fx:id="reminder" text="Reminder" GridPane.rowIndex="2" />
+                                                      <PasswordField fx:id="oldPassField" onKeyPressed="#onEnableButton" GridPane.columnIndex="1" />
+                                                      <PasswordField fx:id="newPassField" onKeyPressed="#onEnableButton" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                                      <TextField fx:id="newPassFieldVisible" editable="true" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                                      <Button fx:id="buttonPassword" disable="false" mnemonicParsing="false" onAction="#passwordVisiblity" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+									                     <graphic>
+									                        <ImageView fitHeight="15.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+									                           <image>
+									                              <Image url="@eye1.png" />
+									                           </image>
+									                        </ImageView>
+									                     </graphic>
+                                                         <GridPane.margin>
+                                                            <Insets bottom="2.0" />
+                                                         </GridPane.margin></Button>
+                                                      <ChoiceBox fx:id="reminderChoiceBox" prefWidth="150.0" styleClass="containerVBox" stylesheets="@../main/main.css" GridPane.columnIndex="1" GridPane.rowIndex="2" />                        
+                                                      <Button fx:id="save" disable="true" mnemonicParsing="false" onAction="#onSave" text="Speichern" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="3" />
+                                                      <Button fx:id="cancel" disable="true" mnemonicParsing="false" onAction="#onCancel" text="Abbrechen" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+                                                   </children>
+                                                </GridPane>
+                                             </children>
+                                          </AnchorPane>
+                                      </items>
+                                    </SplitPane>
+                                 </children>
+                              </AnchorPane>
+                            <AnchorPane maxWidth="800.0" minHeight="0.0" minWidth="0.0" prefHeight="81.0" prefWidth="599.0">
+                                 <children>
+                                    <HBox layoutX="46.0" layoutY="19.0" spacing="10.0">
+                                       <children>
+                                          <ComboBox fx:id="languageCombobox" prefHeight="27.0" prefWidth="140.0" promptText="Sprache" stylesheets="@../main/main.css">
+                                             <styleClass>
+                                                <String fx:value="containerVBox" />
+                                                <String fx:value="element" />
+                                             </styleClass></ComboBox>
+                                          <ColorPicker fx:id="colorPicker" onAction="#colorSelect" promptText="Farbe" stylesheets="@../main/main.css">
+                                             <styleClass>
+                                                <String fx:value="containerVBox" />
+                                                <String fx:value="element" />
+                                             </styleClass></ColorPicker>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </AnchorPane>
+                          </items>
+                        </SplitPane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab fx:id="aboutus" text="About us">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextArea fx:id="aboutusTextArea" editable="false" layoutX="166.0" layoutY="50.0" prefHeight="367.0" prefWidth="648.0" text="Das Internet wächst exponentiell schnell und damit einhergehend ist die Sicherheit zu einem vorrangigen&#10;Thema geworden. Um dieses Problem zu lösen, werden Benutzer aufgefordert, Möglichkeiten - &#10;die immer komplexer werden - für den Zugriff  auf Produkte im Web zu wählen. Paradise-Key wurde &#10;entwickelt, um allen zu helfen, die Schwierigkeiten haben, all diese neuen Zugangsmöglichkeiten, in diesem&#10;Fall die  Passwörter, zu verwalten&#10;&#10;Das im Folgenden vorgestellte Programm Paradise-Key ist der von uns entwickelte Passwort Manager. &#10;Dabei ist die Motivation, dem Benutzer vor allem einen sicheren und praktischen Weg zu ermöglichen, &#10;seine Passwörter und Zugangsdaten mit nur einem (Master-)Passwort zu verwalten und sich neue sichere &#10;Passwörter generieren zu lassen.&#10;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</fx:root>

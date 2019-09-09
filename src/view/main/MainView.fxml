@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<fx:root maxHeight="800.0" maxWidth="1200.0" minHeight="650.0" minWidth="500.0" prefHeight="800.0" prefWidth="1200.0" stylesheets="@main.css" type="BorderPane" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
+   <left>
+      <VBox fx:id="vbox" maxHeight="800.0" maxWidth="125.0" minHeight="500.0" minWidth="125.0" prefHeight="800.0" prefWidth="100.0" style="-fx-spacing: 10px;" styleClass="containerVBox" BorderPane.alignment="TOP_LEFT">
+         <children>
+            <AnchorPane fx:id="menuHome" maxWidth="125.0" minWidth="125.0" onMouseClicked="#showHome" prefHeight="73.0" prefWidth="125.0" styleClass="element">
+               <children>
+                  <VBox alignment="CENTER" maxWidth="125.0" minWidth="125.0" prefHeight="73.0" prefWidth="125.0">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="30.0">
+                           <image>
+                              <Image url="@Icons_Black/home.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets left="4.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <Label fx:id="homeLabel" alignment="CENTER" styleClass="uniform-label" text="Home">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </AnchorPane>
+            <AnchorPane fx:id="menuPwd" maxWidth="125.0" minWidth="125.0" onMouseClicked="#showNewPasswordView" prefHeight="73.0" prefWidth="125.0" styleClass="element">
+               <children>
+                  <VBox alignment="CENTER" maxWidth="125.0" minWidth="125.0" prefHeight="73.0" prefWidth="125.0">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="30.0">
+                           <image>
+                              <Image url="@Icons_Black/plus.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets left="4.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <Label fx:id="passwordLabel" alignment="CENTER" styleClass="uniform-label" text="Passwort">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="menuCategory" maxWidth="125.0" minWidth="125.0" onMouseClicked="#showCategories" prefHeight="73.0" prefWidth="125.0" styleClass="element">
+               <children>
+                  <VBox alignment="CENTER" maxWidth="125.0" minWidth="125.0" prefHeight="73.0" prefWidth="125.0">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="30.0">
+                           <image>
+                              <Image url="@Icons_Black/category.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="catLabel" alignment="CENTER" styleClass="uniform-label" text="Kategorie">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </AnchorPane>
+            <AnchorPane fx:id="menuSave" maxWidth="125.0" minWidth="125.0" onMouseClicked="#save" prefHeight="73.0" prefWidth="125.0" styleClass="element">
+               <children>
+                  <VBox alignment="CENTER" maxWidth="125.0" minWidth="125.0" prefHeight="73.0" prefWidth="125.0">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="30.0">
+                           <image>
+                              <Image url="@Icons_Black/save.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="saveLabel" alignment="CENTER" styleClass="uniform-label" text="Speichern">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </AnchorPane>
+            <AnchorPane fx:id="menuImport" maxWidth="125.0" minWidth="125.0" onMouseClicked="#importData" prefHeight="47.0" prefWidth="125.0" styleClass="element">
+               <children>
+                  <VBox alignment="CENTER" maxWidth="125.0" minWidth="125.0" prefHeight="73.0" prefWidth="125.0">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="30.0">
+                           <image>
+                              <Image url="@Icons_Black/import.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="importLabel" alignment="CENTER" styleClass="uniform-label" text="Importieren">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </AnchorPane>
+            <AnchorPane fx:id="menuExport" maxWidth="125.0" minWidth="125.0" onMouseClicked="#exportData" prefHeight="38.0" prefWidth="125.0" styleClass="element">
+               <children>
+                  <VBox alignment="CENTER" maxWidth="125.0" minWidth="125.0" prefHeight="73.0" prefWidth="125.0">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="30.0">
+                           <image>
+                              <Image url="@Icons_Black/export.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="exportLabel" alignment="CENTER" styleClass="uniform-label" text="Exportieren">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </AnchorPane>
+            <AnchorPane fx:id="menuLock" maxWidth="125.0" minWidth="125.0" onMouseClicked="#lock" prefHeight="39.0" prefWidth="125.0" styleClass="element">
+               <children>
+                  <VBox alignment="CENTER" maxWidth="125.0" minWidth="125.0" prefHeight="73.0" prefWidth="125.0">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="30.0">
+                           <image>
+                              <Image url="@Icons_Black/lock.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="blockLabel" alignment="CENTER" styleClass="uniform-label" text="Sperren">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </AnchorPane>
+            <AnchorPane fx:id="menuSettings" maxWidth="125.0" onMouseClicked="#showSettings" prefHeight="40.0" prefWidth="125.0" styleClass="element">
+               <children>
+                  <VBox alignment="CENTER" maxWidth="125.0" minWidth="125.0" prefHeight="73.0" prefWidth="125.0">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="30.0">
+                           <image>
+                              <Image url="@Icons_Black/settings.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="parameterLabel" alignment="CENTER" styleClass="uniform-label" stylesheets="@main.css" text="Einstellungen">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </AnchorPane>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </VBox>
+   </left>
+   <right>
+      <AnchorPane maxWidth="500.0" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </right>
+</fx:root>
