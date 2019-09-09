@@ -1,18 +1,18 @@
 # Produktbeschreibung ParadiseKey
 ## TeamMember
 
- The team members are: 
- Dimitar Parushev 
- Weifan Zhang
- Delrich Kamtchogom
- Rabea Wagner 
- Kevin Bähre
- Abdulhamed Chribati 
- George Mamar 
- David Henke 
- Marcel Schu
+ The team members are:  
+ Dimitar Parushev   
+ Weifan Zhang  
+ Delrich Kamtchogom  
+ Rabea Wagner   
+ Kevin Bähre  
+ Abdulhamed Chribati   
+ George Mamar   
+ David Henke   
+ Marcel Schu  
 
-Mentor: Christian Riest
+Mentor: Christian Riest  
 ## Einleitung
 Das im Folgenden vorgestellte Programm Paradise-Key ist der von uns entwickelte PasswortManager.
 
