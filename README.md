@@ -36,7 +36,7 @@ Kann man neue Passwort speichern,wenn man Password-Button klicken. In der Passwo
 ### Input and Output
 ![](https://i.imgur.com/VOEqZHK.png)
 
-### SettingView(ich habe gemacht)
+### SettingView(ich habe das gemacht)
 ![](https://i.imgur.com/FDeRgeG.png)
 In SettingView kann man die MasterPasswort veraendern.
 
